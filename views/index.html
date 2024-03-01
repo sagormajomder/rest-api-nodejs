@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+  </head>
+  <body>
+    <h1>Welcome to User Registration</h1>
+
+    <form action="/api/v1/users" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="name">
+          Name:
+          <input type="text" name="name" id="name" />
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" />
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="age">
+          Age:
+          <input type="age" name="age" id="age" />
+        </label>
+      </div>
+      <br />
+      <div>
+        <label for="file">
+          Upload Profile Picture:
+          <input type="file" name="image" id="file" />
+        </label>
+      </div>
+      <button type="submit">Registration</button>
+    </form>
+  </body>
+</html>
